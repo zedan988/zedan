@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zedan The Designer</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-image: url('chicago.jpg'); /* apna background image yaha dalna */
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      color: white;
+    }
+    header {
+      background: rgba(0,0,0,0.6);
+      padding: 20px;
+      text-align: center;
+      font-size: 2em;
+    }
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+    .image-card {
+      background: rgba(0,0,0,0.5);
+      padding: 10px;
+      border-radius: 10px;
+      text-align: center;
+    }
+    .image-card img {
+      width: 100%;
+      border-radius: 10px;
+    }
+    footer {
+      background: rgba(0,0,0,0.6);
+      text-align: center;
+      padding: 10px;
+    }
+    .insta-link {
+      color: #FF0080;
+      text-decoration: none;
+      font-size: 1.2em;
+    }
+  </style>
+</head>
+<body>
+
+  <header>Zedan The Designer</header>
+
+  <div class="container">
+    <div class="image-card">
+      <img src="me.jpg.jpg" alt="Image 1">
+      <p>Follow me</p>
+    </div>
+    <div class="image-card">
+      <img src="me.jpg2.jpg" alt="Image 2">
+      <p>go and like</p>
+    </div>
+    <div class="image-card">
+      <img src="me.jpg3.jpg" alt="Image 3">
+      <p>fast</p>
+    </div>
+  </div>
+
+  <footer>
+    <p>Follow me on Instagram:</p>
+    <a id="insta" class="insta-link" target="_blank">My Instagram</a>
+  </footer>
+
+  <script>
+    // JavaScript se Instagram ID insert karna
+    let instaId = "_iem_xedan_";
+    let instaLink = document.getElementById("insta");
+    instaLink.href = "https://instagram.com/" + instaId;
+    instaLink.innerText = "@" + instaId;
+  </script>
+
+</body>
+</html>
